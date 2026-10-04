@@ -89,7 +89,6 @@ body {
 
 .table-section {
   order: 1;
-  min-width: 0;
 }
 
 .form-section {
@@ -118,25 +117,12 @@ main a:hover {
   color: #1f618d;
 }
 
-.image-map-wrapper {
-  max-width: 100%;
-  overflow-x: auto;
+#table {
+  margin-top: 40px;
 }
 
-.image-map-wrapper img {
-  display: block;
-  width: 400px;
-  max-width: none;
-  height: auto;
-}
-
-#table,
 #form {
-  margin-top: 0;
-}
-
-.table-section {
-  overflow-x: auto;
+  margin-top: 40px;
 }
 
 table {
@@ -350,11 +336,6 @@ form input[type="submit"]:hover {
   text-align: center;
 }
 
-.radio-label {
-  display: inline-block;
-  margin-right: 15px;
-  margin-bottom: 5px;
-}
 
 @media screen and (min-width: 800px) {
   #site-header {
