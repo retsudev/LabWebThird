@@ -21,194 +21,242 @@
   </nav>
 
   <main class="container">
-    <h2 id="links">Гиперссылки</h2>
-    <ul>
-      <li><a href="http://kubsu.ru/">КубГУ</a></li>
-      <li><a href="https://kubsu.ru/">КубГУ по HTTPS</a></li>
-      <li><a href="https://kubsu.ru/"><img src="image.jpg" alt="КубГУ" width="200"></a></li>
-      <li><a href="/about">Сокращенная ссылка на внутреннюю страницу</a></li>
-      <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
-      <li><a href="#form">Ссылка на фрагмент текущей страницы</a></li>
-      <li><a href="https://example.com/?name=ivan&amp;group=2&amp;course=2">Ссылка с тремя параметрами</a></li>
-      <li><a href="https://example.com/?id=123">Ссылка с параметром id</a></li>
-      <li><a href="./demo.html">Ссылка на страницу в текущем каталоге</a></li>
-      <li><a href="./about/about.html">Ссылка на страницу в каталоге about</a></li>
-      <li><a href="../index.html">Ссылка на страницу уровнем выше</a></li>
-      <li><a href="../../index.html">Ссылка на страницу двумя уровнями выше</a></li>
-      <li>Текст с <a href="https://developer.mozilla.org/ru/docs/Web/HTML">контекстной ссылкой</a> внутри.</li>
-      <li><a href="https://developer.mozilla.org/ru/docs/Web/HTML#элементы_и_атрибуты">Ссылка на фрагмент страницы
-          другого сайта</a></li>
-      <li>
-        <img src="image.jpg" alt="Картинка" width="400" usemap="#map">
-        <map name="map">
-          <area shape="rect" coords="0,0,200,200" href="https://kubsu.ru/" alt="КубГУ">
-          <area shape="circle" coords="300,100,70" href="https://www.wikipedia.org/" alt="Wikipedia">
-        </map>
-      </li>
-      <li><a href="">Ссылка с пустым href</a></li>
-      <li><a>Ссылка без href</a></li>
-      <li><a href="https://example.com/" rel="nofollow">Ссылка с запретом перехода поисковика</a></li>
-      <li><a href="https://example.com/" rel="noindex">Ссылка с запретом индексации</a></li>
-      <li>
-        <ol>
-          <li><a href="https://kubsu.ru/" title="Официальный сайт КубГУ">КубГУ</a></li>
-          <li><a href="https://www.google.com/" title="Google">Google</a></li>
-          <li><a href="https://www.wikipedia.org/" title="Wikipedia">Wikipedia</a></li>
-        </ol>
-      </li>
-      <li><a href="ftp://student:password@example.com/files/file.txt">FTP-ссылка с авторизацией</a></li>
-    </ul>
+    <div class="content-layout">
 
-    <h2 id="table">Таблица</h2>
+      <section class="links-section">
+        <h2 id="links">Гиперссылки</h2>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Название</th>
-          <th>Тип</th>
-          <th>Количество</th>
-          <th>Описание</th>
-        </tr>
-      </thead>
+        <ul>
+          <li><a href="http://kubsu.ru/">КубГУ</a></li>
+          <li><a href="https://kubsu.ru/">КубГУ по HTTPS</a></li>
+          <li><a href="https://kubsu.ru/"><img src="image.jpg" alt="КубГУ" width="200"></a></li>
+          <li><a href="/about">Сокращенная ссылка на внутреннюю страницу</a></li>
+          <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+          <li><a href="#form">Ссылка на фрагмент текущей страницы</a></li>
+          <li><a href="https://example.com/?name=ivan&amp;group=2&amp;course=2">Ссылка с тремя параметрами</a></li>
+          <li><a href="https://example.com/?id=123">Ссылка с параметром id</a></li>
+          <li><a href="./demo.html">Ссылка на страницу в текущем каталоге</a></li>
+          <li><a href="./about/about.html">Ссылка на страницу в каталоге about</a></li>
+          <li><a href="../index.html">Ссылка на страницу уровнем выше</a></li>
+          <li><a href="../../index.html">Ссылка на страницу двумя уровнями выше</a></li>
+          <li>
+            Текст с
+            <a href="https://developer.mozilla.org/ru/docs/Web/HTML">
+              контекстной ссылкой
+            </a>
+            внутри.
+          </li>
+          <li>
+            <a href="https://developer.mozilla.org/ru/docs/Web/HTML#элементы_и_атрибуты">
+              Ссылка на фрагмент страницы другого сайта
+            </a>
+          </li>
 
-      <tbody>
-        <tr>
-          <td>HTML</td>
-          <td>Разметка</td>
-          <td>1</td>
-          <td>Структура страницы</td>
-        </tr>
+          <li>
+            <img src="image.jpg" alt="Картинка" width="400" usemap="#map">
 
-        <tr>
-          <td>CSS</td>
-          <td>Стили</td>
-          <td>2</td>
-          <td>Оформление страницы</td>
-        </tr>
+            <map name="map">
+              <area shape="rect" coords="0,0,200,200" href="https://kubsu.ru/" alt="КубГУ">
+              <area shape="circle" coords="300,100,70" href="https://www.wikipedia.org/" alt="Wikipedia">
+            </map>
+          </li>
 
-        <tr>
-          <td colspan="2">JavaScript</td>
-          <td>3</td>
-          <td>Логика страницы</td>
-        </tr>
+          <li><a href="">Ссылка с пустым href</a></li>
+          <li><a>Ссылка без href</a></li>
+          <li><a href="https://example.com/" rel="nofollow">Ссылка с запретом перехода поисковика</a></li>
+          <li><a href="https://example.com/" rel="noindex">Ссылка с запретом индексации</a></li>
 
-        <tr>
-          <td>Git</td>
-          <td>VCS</td>
-          <td rowspan="2">4</td>
-          <td>История изменений</td>
-        </tr>
+          <li>
+            <ol>
+              <li><a href="https://kubsu.ru/" title="Официальный сайт КубГУ">КубГУ</a></li>
+              <li><a href="https://www.google.com/" title="Google">Google</a></li>
+              <li><a href="https://www.wikipedia.org/" title="Wikipedia">Wikipedia</a></li>
+            </ol>
+          </li>
 
-        <tr>
-          <td>GitLab</td>
-          <td>Хостинг</td>
-          <td>Публикация сайта</td>
-        </tr>
+          <li>
+            <a href="ftp://student:password@example.com/files/file.txt">
+              FTP-ссылка с авторизацией
+            </a>
+          </li>
+        </ul>
+      </section>
 
-        <tr>
-          <td>Nginx</td>
-          <td>Web server</td>
-          <td>5</td>
-          <td>Обработка запросов</td>
-        </tr>
-      </tbody>
-    </table>
+      <section class="table-section">
+        <h2 id="table">Таблица</h2>
 
-    <h2 id="form">Форма</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Название</th>
+              <th>Тип</th>
+              <th>Количество</th>
+              <th>Описание</th>
+            </tr>
+          </thead>
 
-    <form action="/" method="POST">
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td>Разметка</td>
+              <td>1</td>
+              <td>Структура страницы</td>
+            </tr>
 
-      <div class="form-field">
-        <label>
-          ФИО:<br>
-          <input type="text" name="fullname" placeholder=" " pattern="[A-Za-zА-Яа-яЁё\s\-]+"
-            title="Используйте только буквы, пробелы и дефис" required>
-          <span class="validation-message">ФИО может содержать только буквы, пробелы и дефис.</span>
-        </label>
-      </div>
+            <tr>
+              <td>CSS</td>
+              <td>Оформление</td>
+              <td>2</td>
+              <td>Оформление страницы</td>
+            </tr>
 
-      <div class="form-field">
-        <label>
-          Телефон:<br>
-          <input type="tel" name="phone" placeholder=" " pattern="\+?[0-9][0-9\s\(\)\-]*"
-            title="Введите корректный номер телефона" required>
-          <span class="validation-message">Используйте цифры, пробелы, +, - и скобки.</span>
-        </label>
-      </div>
+            <tr>
+              <td colspan="2">JavaScript</td>
+              <td>3</td>
+              <td>Логика страницы</td>
+            </tr>
 
-      <div class="form-field">
-        <label>
-          E-mail:<br>
-          <input type="email" name="email" placeholder=" " title="Введите корректный адрес электронной почты" required>
-          <span class="validation-message">Введите корректный адрес электронной почты.</span>
-        </label>
-      </div>
+            <tr>
+              <td>Git</td>
+              <td>VCS</td>
+              <td rowspan="2">4</td>
+              <td>История изменений</td>
+            </tr>
 
-      <div class="form-field">
-        <label>
-          Дата рождения:<br>
-          <input type="date" name="birthdate" required>
-          <span class="validation-message">Укажите дату рождения.</span>
-        </label>
-      </div>
+            <tr>
+              <td>GitLab</td>
+              <td>Хостинг</td>
+              <td>Публикация сайта</td>
+            </tr>
 
-      <div class="form-field">
-        Пол:<br>
+            <tr>
+              <td>Nginx</td>
+              <td>Web server</td>
+              <td>5</td>
+              <td>Обработка запросов</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-        <label class="radio-label">
-          <input type="radio" name="gender" value="male" required>
-          Мужской
-        </label>
+      <section class="form-section">
+        <h2 id="form">Форма</h2>
 
-        <label class="radio-label">
-          <input type="radio" name="gender" value="female">
-          Женский
-        </label>
+        <form action="/" method="POST">
 
-        <span class="validation-message">Выберите пол.</span>
-      </div>
+          <div class="form-field">
+            <label>
+              ФИО:<br>
+              <input type="text" name="fullname" placeholder=" " pattern="[A-Za-zА-Яа-яЁё\s\-]+"
+                title="Используйте только буквы, пробелы и дефис" required>
+              <span class="validation-message">
+                ФИО может содержать только буквы, пробелы и дефис.
+              </span>
+            </label>
+          </div>
 
-      <div class="form-field">
-        <label>
-          Любимый язык программирования:<br>
-          <select name="language[]" multiple size="6" required>
-            <option value="Pascal">Pascal</option>
-            <option value="C">C</option>
-            <option value="C++">C++</option>
-            <option value="JavaScript">JavaScript</option>
-            <option value="PHP">PHP</option>
-            <option value="Python">Python</option>
-            <option value="Java">Java</option>
-            <option value="Haskell">Haskell</option>
-            <option value="Clojure">Clojure</option>
-            <option value="Prolog">Prolog</option>
-            <option value="Scala">Scala</option>
-          </select>
-          <span class="validation-message">Выберите хотя бы один язык программирования.</span>
-        </label>
-      </div>
+          <div class="form-field">
+            <label>
+              Телефон:<br>
+              <input type="tel" name="phone" placeholder=" " pattern="\+?[0-9][0-9\s\(\)\-]*"
+                title="Введите корректный номер телефона" required>
+              <span class="validation-message">
+                Используйте цифры, пробелы, +, - и скобки.
+              </span>
+            </label>
+          </div>
 
-      <div class="form-field">
-        <label>
-          Биография:<br>
-          <textarea name="biography" rows="8" cols="40" maxlength="1000" required></textarea>
-          <span class="validation-message">Заполните биографию.</span>
-        </label>
-      </div>
+          <div class="form-field">
+            <label>
+              E-mail:<br>
+              <input type="email" name="email" placeholder=" " title="Введите корректный адрес электронной почты"
+                required>
+              <span class="validation-message">
+                Введите корректный адрес электронной почты.
+              </span>
+            </label>
+          </div>
 
-      <div class="form-field">
-        <label>
-          <input type="checkbox" name="contract" required>
-          С контрактом ознакомлен
-        </label>
-        <span class="validation-message">Необходимо подтвердить ознакомление с контрактом.</span>
-      </div>
+          <div class="form-field">
+            <label>
+              Дата рождения:<br>
+              <input type="date" name="birthdate" required>
+              <span class="validation-message">
+                Укажите дату рождения.
+              </span>
+            </label>
+          </div>
 
-      <div class="form-field">
-        <input type="submit" value="Сохранить">
-      </div>
+          <div class="form-field">
+            Пол:<br>
 
-    </form>
+            <label class="radio-label">
+              <input type="radio" name="gender" value="male" required>
+              Мужской
+            </label>
+
+            <label class="radio-label">
+              <input type="radio" name="gender" value="female">
+              Женский
+            </label>
+
+            <span class="validation-message">Выберите пол.</span>
+          </div>
+
+          <div class="form-field">
+            <label>
+              Любимый язык программирования:<br>
+
+              <select name="language[]" multiple size="6" required>
+                <option value="Pascal">Pascal</option>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="PHP">PHP</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="Haskell">Haskell</option>
+                <option value="Clojure">Clojure</option>
+                <option value="Prolog">Prolog</option>
+                <option value="Scala">Scala</option>
+              </select>
+
+              <span class="validation-message">
+                Выберите хотя бы один язык программирования.
+              </span>
+            </label>
+          </div>
+
+          <div class="form-field">
+            <label>
+              Биография:<br>
+              <textarea name="biography" rows="8" cols="40" maxlength="1000" required></textarea>
+
+              <span class="validation-message">
+                Заполните биографию.
+              </span>
+            </label>
+          </div>
+
+          <div class="form-field">
+            <label>
+              <input type="checkbox" name="contract" required>
+              С контрактом ознакомлен
+            </label>
+
+            <span class="validation-message">
+              Необходимо подтвердить ознакомление с контрактом.
+            </span>
+          </div>
+
+          <div class="form-field">
+            <input type="submit" value="Сохранить">
+          </div>
+
+        </form>
+      </section>
+
+    </div>
   </main>
 
   <footer id="site-footer">
