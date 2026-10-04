@@ -22,6 +22,24 @@ body {
   padding: 25px 15px;
 }
 
+.content-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.links-section {
+  order: 2;
+}
+
+.table-section {
+  order: 1;
+}
+
+.form-section {
+  order: 3;
+}
+
 #site-header,
 #site-nav,
 #site-footer {
