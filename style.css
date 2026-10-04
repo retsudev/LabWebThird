@@ -35,7 +35,7 @@ body {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 20px 15px 40px;
+  padding: 16px 10px 35px;
 }
 
 #site-header,
@@ -103,12 +103,16 @@ body {
   display: flex;
   flex-direction: column;
   gap: 28px;
+  min-width: 0;
 }
 
 .links-section,
 .table-section,
 .form-section {
-  padding: 22px;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  padding: 18px;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 16px;
@@ -128,9 +132,9 @@ body {
 }
 
 main h2 {
-  margin: 0 0 18px;
+  margin: 0 0 16px;
   color: var(--text);
-  font-size: 24px;
+  font-size: 21px;
   line-height: 1.25;
 }
 
@@ -165,6 +169,10 @@ main a:hover {
 }
 
 .links-section img {
+  display: block;
+  width: min(100%, 400px);
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 6px 18px rgba(85, 45, 20, 0.12);
 }
@@ -176,19 +184,22 @@ main a:hover {
 
 table {
   width: 100%;
+  max-width: 100%;
+  table-layout: fixed;
   border-collapse: separate;
   border-spacing: 0;
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: 10px;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 th,
 td {
-  padding: 10px 9px;
+  padding: 7px 6px;
   border: 1px solid var(--border);
   text-align: left;
+  overflow-wrap: anywhere;
 }
 
 th {
@@ -435,6 +446,13 @@ form input[type="submit"]:hover {
     gap: 40px;
   }
 
+  .links-section,
+  .table-section,
+  .form-section {
+    padding: 28px;
+    border-radius: 18px;
+  }
+
   .links-section {
     order: 1;
   }
@@ -445,13 +463,6 @@ form input[type="submit"]:hover {
 
   .form-section {
     order: 3;
-  }
-
-  .links-section,
-  .table-section,
-  .form-section {
-    padding: 28px;
-    border-radius: 18px;
   }
 
   main h2 {
